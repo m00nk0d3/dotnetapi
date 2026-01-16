@@ -1,0 +1,33 @@
+GET http://localhost:5262/games
+###
+GET http://localhost:5262/genres
+###
+
+GET http://localhost:5262/games/1
+
+###
+
+POST http://localhost:5262/games
+Content-Type: application/json
+
+{
+    "title": "Super Mario Odyssey",
+   "genreId": 2, 
+    "price": 9.99,
+    "releaseDate": "2017-10-27"
+}
+
+###
+
+PUT http://localhost:5262/games/1
+Content-Type: application/json
+
+{
+    "title": "The Legend of Zelda: Tears of the Kingdom",
+    "genreId": 1, 
+    "price": 69.99,
+    "releaseDate": "2023-05-12"
+}
+
+###
+DELETE http://localhost:5262/games/1
